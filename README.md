@@ -24,7 +24,7 @@ In individual terminals start the following nodes:
 **start keyboard input driver node**
 - $ rosrun turtlesim turtle
 
-## Setup of ROS industrial ##
+## Installation of ROS industrial ##
 **Add sources for ros packages**
 - $ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu trusty main" > /etc/apt/sources.list.d/ros-latest.list'
 - $ wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | sudo apt-key add -
