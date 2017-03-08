@@ -4,6 +4,8 @@
 **Download and install VirtualBox and VirtualBox Extension Pack**
 https://www.virtualbox.org/wiki/Downloads
 
+Note: I experienced that, sometimes, the network adapter for VirtualBox messes with the network access on the work PC, if that is the case, simply disable it while not using the VM.
+
 **Download ros indigo64bit VM**
 https://drive.google.com/file/d/0B_ULD8CBaw26TEpqUG1McGs5aVU/view?usp=sharing
 
