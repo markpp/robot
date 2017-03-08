@@ -12,6 +12,8 @@ https://drive.google.com/file/d/0B_ULD8CBaw26TEpqUG1McGs5aVU/view?usp=sharing
 **Configure and start VM**
 You may need to change some things in the configuration e.g. ubuntu32 ->ubuntu64
 
+user password: viki
+
 ## Run Demo ##
 In individual terminals start the following nodes:
 
@@ -39,4 +41,15 @@ http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Uni
 **Install MoveIt!**
 http://moveit.ros.org/install/
 
+## Issues ##
+There is problems with 3D hardware acceleration in the guest OS, because of the gfx driver. This means that 3D visualization results in errors like this "libGL error: failed to load driver: vboxvideo"
 
+
+Possible fix:
+
+Install Guest Additions(https://help.ubuntu.com/community/VirtualBox/GuestAdditions)
+- $ sudo apt-get install virtualbox-guest-additions-iso
+
+Possible workaround(slow):
+- $ export LIBGL_ALWAYS_SOFTWARE=1
+or disable 3D acceleration in Virtual box
