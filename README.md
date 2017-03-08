@@ -14,6 +14,10 @@ You may need to change some things in the configuration e.g. ubuntu32 ->ubuntu64
 
 user password: viki
 
+**update system**
+- $ sudo apt-get upgrade
+If asked where to install grup, select with "space bar" and press enter
+
 ## Run Demo ##
 In individual terminals start the following nodes:
 
@@ -42,11 +46,12 @@ http://wiki.ros.org/universal_robot/Tutorials/Getting%20Started%20with%20a%20Uni
 http://moveit.ros.org/install/
 
 ## Issues ##
-There is problems with 3D hardware acceleration in the guest OS, because of the gfx driver. This means that 3D visualization results in errors like this "libGL error: failed to load driver: vboxvideo"
+There is problems with 3D hardware acceleration in the guest OS. This means that any 3D visualization results in errors like this "libGL error: failed to load driver: vboxvideo"
 
+This should not happen if the system is updated:
+- $ sudo apt-get upgrade
 
 Possible fix:
-
 Install Guest Additions(https://help.ubuntu.com/community/VirtualBox/GuestAdditions)
 - $ sudo apt-get install virtualbox-guest-additions-iso
 
