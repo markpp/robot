@@ -5,21 +5,24 @@
 https://www.virtualbox.org/wiki/Downloads
 
 **Download ros indigo64bit VM**
-http://nootrix.com/downloads/
+https://drive.google.com/file/d/0B_ULD8CBaw26TEpqUG1McGs5aVU/view?usp=sharing
+
+(http://nootrix.com/downloads/)
 
 **Configure and start VM**
 You may need to change some things in the configuration e.g. ubuntu32 ->ubuntu64
 
 ## Run Demo ##
-In individual terminals run the following nodes:
+In individual terminals start the following nodes:
+
 **as always start roscore**
-roscore
+- $ roscore
 
 **start simulated robot node**
-rosrun turtlesim turtlesim_node
+- $ rosrun turtlesim turtlesim_node
 
 **start keyboard input driver node**
-rosrun turtlesim turtle
+- $ rosrun turtlesim turtle
 
 ## Setup of ROS industrial ##
 **Add sources for ros packages**
