@@ -50,6 +50,9 @@ http://moveit.ros.org/install/
 ## Issues ##
 There is problems with 3D hardware acceleration in the guest OS. This means that any 3D visualization results in errors like this "libGL error: failed to load driver: vboxvideo"
 
+This command will reveal the problem if it exists
+- $ sudo /usr/lib/nux/unity_support_test -p
+
 This should not happen if the system is updated:
 - $ sudo apt-get upgrade
 
